@@ -33,7 +33,6 @@
      footer, header, hgroup, menu, nav, output, ruby,
      section, summary, time, mark, audio, video {
          margin: 0;
-         padding: 0;
          border: 0;
          font-size: 100%;
          font: inherit;
@@ -133,7 +132,6 @@
          font-variant: normal;
          text-rendering: auto;
          line-height: 1;
-         text-transform: none !important;
          font-family: 'Font Awesome 5 Free';
          font-weight: 400;
      }
@@ -192,7 +190,6 @@
          font-variant: normal;
          text-rendering: auto;
          line-height: 1;
-         text-transform: none !important;
          font-family: 'Font Awesome 5 Free';
          font-weight: 400;
      }
@@ -225,18 +222,6 @@
      /* Main */
 
      #main {
-         -moz-transform-origin: 50% 50%;
-         -webkit-transform-origin: 50% 50%;
-         -ms-transform-origin: 50% 50%;
-         transform-origin: 50% 50%;
-         -moz-transform: rotateX(0deg);
-         -webkit-transform: rotateX(0deg);
-         -ms-transform: rotateX(0deg);
-         transform: rotateX(0deg);
-         -moz-transition: opacity 1s ease, -moz-transform 1s ease;
-         -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-         -ms-transition: opacity 1s ease, -ms-transform 1s ease;
-         transition: opacity 1s ease, transform 1s ease;
          padding: 4.5em 3em 3em 3em ;
          background: #ffffff;
          border-radius: 4px;
@@ -258,10 +243,6 @@
      }
 
      body.is-preload #main {
-         -moz-transform: rotateX(15deg);
-         -webkit-transform: rotateX(15deg);
-         -ms-transform: rotateX(15deg);
-         transform: rotateX(15deg);
          opacity: 0;
      }
 
