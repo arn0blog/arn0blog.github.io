@@ -1,5 +1,4 @@
 install:
-  - sudo apt install make -y
 script:
   - sed -i "s/CO_TOKEN/${CO_TOKEN}/g" deploy.sh || exit 1
 after_success:
