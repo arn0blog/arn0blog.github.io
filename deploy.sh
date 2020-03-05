@@ -14,9 +14,9 @@ git init
 git config user.name "arn0blog"
 git config user.email "i@arn0.org"
 
-git remote add upstream "git@github.com:arn0blog/arn0page.git"
-git fetch upstream
-git reset upstream/master
+#git remote add upstream "git@github.com:arn0blog/arn0page.git"
+#git fetch upstream
+#git reset upstream/master
 
 echo "arn0.org" > CNAME
 
