@@ -10,8 +10,6 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-cd stage/_book
-
 git init
 git config user.name "i@arn0.org"
 git config user.email "i@arn0.org"
@@ -21,8 +19,6 @@ git fetch upstream
 git reset upstream/master
 
 echo "arn0.org" > CNAME
-
-touch .
 
 # Push To Github
 #git add *
