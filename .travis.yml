@@ -1,0 +1,11 @@
+install:
+  - sudo apt install make -y
+script:
+  - sed -i "s/CO_TOKEN/${CO_TOKEN}/g" deploy.sh || exit 1
+  - sed -i "s/CO_TOKEN/${CO_TOKEN}/g" config || exit 1
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh
+env:
+  global:
+    - secure: $GH_TOKEN
+    - secure: $CO_TOKEN
