@@ -2,21 +2,15 @@
 
 set -o errexit -o nounset
 
-if [ "$TRAVIS_BRANCH" != "master" ]
-then
-  echo "This commit was made against the $TRAVIS_BRANCH and not the master! No deploy!"
-  exit 0
-fi
-
 rev=$(git rev-parse --short HEAD)
 
 git init
 git config user.name "arn0blog"
 git config user.email "i@arn0.org"
 
-#git remote add upstream "git@github.com:arn0blog/arn0page.git"
-#git fetch upstream
-#git reset upstream/master
+git remote add upstream "git@github.com:arn0blog/arn0page.git"
+git fetch upstream
+git reset upstream/master
 
 cp src/index.html /tmp
 git checkout master
