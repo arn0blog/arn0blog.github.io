@@ -8,7 +8,7 @@ git init
 git config user.name "arn0blog"
 git config user.email "i@arn0.org"
 
-git remote add upstream git@github.com:arn0blog/arn0page.git
+git remote add upstream https://github.com/arn0blog/arn0page.git
 git fetch upstream
 git reset upstream/test
 
