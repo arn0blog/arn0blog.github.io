@@ -1,8 +1,6 @@
 install:
 script:
-  - sed -i "s/CO_TOKEN/${CO_TOKEN}/g" deploy.sh || exit 1
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "test" && bash deploy.sh
 env:
   global:
-    - secure: $CO_TOKEN
