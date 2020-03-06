@@ -18,13 +18,13 @@ git config user.email "i@arn0.org"
 #git fetch upstream
 #git reset upstream/master
 
-git checkout master
-echo "arn0.org" > CNAME
-wget https://raw.githubusercontent.com/arn0blog/arn0page/test/dist/index.html?token=AOR53YB4JQPMRCH52RLLIIS6MILXC
-mv index.html* index.html
-git add index.html CNAME
-git commit -m "update'
-git push origin master
+#git checkout master
+#echo "arn0.org" > CNAME
+#wget https://raw.githubusercontent.com/arn0blog/arn0page/test/dist/index.html?token=AOR53YB4JQPMRCH52RLLIIS6MILXC
+#mv index.html* index.html
+#git add index.html CNAME
+#git commit -m "update'
+#git push origin master
 
 
 # Push To Coding
