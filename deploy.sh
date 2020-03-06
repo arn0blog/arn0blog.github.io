@@ -19,10 +19,3 @@ echo "arn0.org" > CNAME
 git add index.html CNAME
 git commit -m "update'
 git push origin master
-
-
-# Push To Coding
-git remote set-url origin https://CO_TOKEN@e.coding.net/arn0/MainPage.git
-git add *
-git commit -m "update"
-git push origin master -f
