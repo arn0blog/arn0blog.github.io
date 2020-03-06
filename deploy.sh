@@ -20,7 +20,7 @@ git config user.email "i@arn0.org"
 
 git checkout master
 echo "arn0.org" > CNAME
-wget https://raw.githubusercontent.com/arn0blog/arn0page/test/index.html?token=AOR53YDJJIZGHPP2PJOZDQ26MIK5K
+wget https://raw.githubusercontent.com/arn0blog/arn0page/test/dist/index.html?token=AOR53YB4JQPMRCH52RLLIIS6MILXC
 mv index.html* index.html
 git add index.html CNAME
 git commit -m "update'
