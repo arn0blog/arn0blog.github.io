@@ -6,7 +6,7 @@ rev=$(git rev-parse --short HEAD)
 
 git init
 git config user.name "arn0blog"
-git config user.email "i@arn0.org"
+git config user.email "arn0.maxlv@gmail.com"
 
 git remote add upstream https://github.com/arn0blog/arn0page.git
 git fetch upstream
