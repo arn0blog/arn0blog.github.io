@@ -2,5 +2,3 @@ install:
 script:
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "test" && bash deploy.sh
-env:
-  global:
