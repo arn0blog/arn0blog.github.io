@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-	<title>Arn0</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-	<meta name="Arn0的主页"
-			content="一个没人访问的破网站（欸">
+  <meta charset="utf-8">
+  <title>Arn0</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      min-width: 303px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #main {
+      flex: 1;
+    }
+  </style>
 </head>
 <body>
+  <header class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-4">Hi I'm Arn0</h1>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs is-centered">
+        <ul>
+          <li><a href="https://blog.arn0.org" target="_blank">Blog</a></li>
+          <li><a href="https://github.com/jsuse" target="_blank">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<div id="wrapper" style="background-color: #f1f1f1; padding: 20px;">
-		<header id="header" style="text-align: center;">
-			<div class="content">
-				<div class="inner">
-					<h1 style="color: #333; font-size: 24px; font-weight: bold;">Hi I'm Arn0</h1>
-				</div>
-			</div>
-			<nav>
-				<ul style="list-style: none; padding: 0; margin: 0; text-align: center;">
-					<li style="display: inline-block; margin-right: 10px;"><a href="https://blog.arn0.org" target="_blank" style="color: #333;">Blog</a></li>
-					<li style="display: inline-block; margin-right: 10px;"><a href="https://github.com/jsuse" target="_blank" style="color: #333;">Github</a></li>
-				</ul>
-			</nav>
-		</header>
+  <div id="main" class="container">
+    <section class="section">
+      <h2 class="title is-5">About</h2>
+      <p>热爱折腾，喜欢开源的东西．另外，欢迎交换<a href="https://blog.arn0.org/links/">友链</a>～</p>
+    </section>
 
-		<div id="main" style="margin-top: 20px;">
-			<article id="about">
-				<h2 class="major" style="font-size: 20px; font-weight: bold;">About</h2>
-				<p style="color: #666;">热爱折腾，喜欢开源的东西．另外，欢迎交换<a href="https://blog.arn0.org/links/" style="color: #333;">友链</a>～</p>
-			</article>
+    <section class="section">
+      <h2 class="title is-5">Contact</h2>
+      <p>Mail: <a href="mailto:arn0.maxlv@gmail.com">arn0.maxlv@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/arn0w">@Arn0W</a></p>
+      <p>Twitter: <a href="https://twitter.com/icearn0">@icearn0</a></p>
+    </section>
+  </div>
 
-			<article id="contact">
-				<h2 class="major" style="font-size: 20px; font-weight: bold;">Contact</h2>
-				<p style="color: #666;">Mail: <a href="mailto:arn0.maxlv@gmail" style="color: #333;">arn0.maxlv@gmail.com</a></p>
-				<p style="color: #666;">Telegram: <a href="https://t.me/arn0w" style="color: #333;">@Arn0W</a></p>
-				<p style="color: #666;">Twitter: <a href="https://twitter.com/icearn0" style="color: #333;">@icearn0</a></p>
-			</article>
-		</div>
-
-		<footer id="footer" style="text-align: center; margin-top: 20px;">
-			<p style="color: #666;">&copy; Arn0. UPTIME:
-				<a href="https://arn0.org/Status/" style="color: #333;">UptimeRobot</a>
-			</p>
-		</footer>
-
-	</div>
-
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><a href="https://arn0.org/Status/">UptimeRobot</a></p>
+      <p>Design by: <a href="chat.openai.com">ChatGPT</a></p>
+    </div>
+  </footer>
 </body>
 </html>
